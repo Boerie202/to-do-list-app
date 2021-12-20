@@ -1,4 +1,4 @@
-
+  function newItem(){
   let li = $('<li></li>');
   let inputValue = $('#input').val();
 
@@ -22,17 +22,16 @@ li.on('dblclick', function crossOut(){
 
 
 //---------------------Adding in the delete button shown as an "X"----------------
-
-let crossOutButton = $('<crossOutButton><crossOutButton</>')
+let crossOutButton = $('<crossOutButton><crossOutButton</>');
 crossOutButton.append(document.createTextNode('X'));
 li.append(crossOutButton);
 
-crossOutButton.on('click' deleteListItem);
-
 //------------------Adding in the class of "Delete" from CSS file------------------
 
+crossOutButton.on('click', deleteListItem);
 function deleteListItem(){
-  li.addClass('delete');
+    li.addClass('delete');
+}
 }
 
 
